@@ -1,0 +1,61 @@
+body {
+	line-height: 1.8;
+	/*font-family: "IPAexMincho";*/
+	/*font-family: "游ゴシック", "Yu Gothic", YuGothic, sans-serif;*/
+	font-family: "Noto Serif", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	margin: 20px;
+	color: #263238 !important;
+	background-color: #fafafa;
+}
+
+a {
+	text-decoration: underline;
+}
+
+body h1:not(:first-child) {
+	margin-top: 5rem;
+}
+
+body h2:not(:first-child),
+body h3:not(:first-child),
+body h4:not(:first-child),
+body h5:not(:first-child),
+body h6:not(:first-child) {
+	margin-top: 1.5em;
+}
+
+strong {
+	color: #d32f2f;
+}
+
+
+/* code */
+body pre {
+	background-color: #eceff1 !important;
+	border: solid 1px #b0bec5 !important;
+	color: #263238 !important;
+}
+
+
+/* table */
+
+body table th {
+	background-color: #cfd8dc;
+	/* border: solid 1px #b0bec5 !important; */
+}
+
+body table td {
+	/* background-color: #cfd8dc; */
+	border: solid 1px #ddd !important;
+}
+
+body table td:nth(even) {
+	background-color: #cfd8dc;
+}
+
+
+/* list */
+body ul li:not(:last-of-type),
+body ol li:not(:last-of-type) {
+	margin-bottom: 0.5rem;
+}
