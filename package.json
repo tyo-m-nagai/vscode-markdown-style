@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tyo-m-nagai/vscode-markdown-style.git",
-  "author": "NAGAI Masatoshi <nagai.masatoshi@tyo.co.jp>",
+  "author": "NAGAI Masatoshi <nagai_masatoshi@xpd-inc.co.jp>",
   "license": "MIT",
-  "devDependencies": {
-    "sass": "1.22.x"
-  },
   "scripts": {
-    "production": "sass --style=compressed --no-source-map --trace ./src/user.scss:./user.min.css"
+    "production": "run-s lint:css css",
+    "css": "sass --style=compressed --no-source-map --trace ./src/user.scss:./user.min.css",
+    "lint:css": "stylelint --fix src/**/*.{css,scss,sass}"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.19.0"
+  },
+  "dependencies": {
+    "sass": "^1.34.1"
   }
 }

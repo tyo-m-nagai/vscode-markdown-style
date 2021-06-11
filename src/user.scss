@@ -2,9 +2,7 @@ body {
 	margin: 1.25rem;
 	color: #212121 !important;
 	background-color: #fafafa;
-}
 
-body {
 	// title
 	h1 {
 		&:not(:first-child) {
@@ -31,6 +29,14 @@ body {
 			margin-top: 1.5em;
 		}
 	}
+
+	// list
+	ul,
+	ol {
+		&:not(:last-of-type) {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 code,
@@ -49,20 +55,10 @@ table {
 	td {
 		border: solid 1px #e0e0e0 !important;
 		background-color: #fff;
-	
-		&:nth(even) {
+
+		&:nth-child(even) {
 			background-color: #eceff1;
 		}
 	}
-	
-}
 
-// list
-body {
-	ul,
-	ol {
-		&:not(:last-of-type) {
-			margin-bottom: 0.5rem;
-		}
-	}
 }
